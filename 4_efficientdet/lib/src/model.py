@@ -177,7 +177,7 @@ class EfficientNet(nn.Module):
         super(EfficientNet, self).__init__()
         
 #         model = EffNet.from_pretrained('efficientnet-b0')
-        model = EffNet.from_pretrained('efficientnet-b6')
+        model = EffNet.from_pretrained('efficientnet-b3')
         
         del model._conv_head
         del model._bn1
