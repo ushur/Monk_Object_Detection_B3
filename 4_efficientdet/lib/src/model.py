@@ -175,7 +175,10 @@ class Classifier(nn.Module):
 class EfficientNet(nn.Module):
     def __init__(self, ):
         super(EfficientNet, self).__init__()
-        model = EffNet.from_pretrained('efficientnet-b0')
+        
+#         model = EffNet.from_pretrained('efficientnet-b0')
+        model = EffNet.from_pretrained('efficientnet-b7')
+        
         del model._conv_head
         del model._bn1
         del model._avg_pooling
